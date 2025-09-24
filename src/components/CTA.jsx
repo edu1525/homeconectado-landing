@@ -83,10 +83,15 @@ const CTA = () => {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <button className="bg-white text-gray-900 px-12 py-5 rounded-full font-bold text-xl hover:bg-gray-100 transition-all duration-300 hover:scale-105 shadow-2xl hover:shadow-white/20 flex items-center gap-3 mx-auto">
+            <a 
+              href="https://wa.me/5516993739326?text=Olá! Gostaria de solicitar um orçamento gratuito para automação residencial. Podem me ajudar?"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-gray-900 px-12 py-5 rounded-full font-bold text-xl hover:bg-gray-100 transition-all duration-300 hover:scale-105 shadow-2xl hover:shadow-white/20 flex items-center gap-3 mx-auto"
+            >
               Solicitar Orçamento Gratuito
               <ArrowRight className="w-6 h-6" />
-            </button>
+            </a>
           </motion.div>
         </motion.div>
 
@@ -121,9 +126,19 @@ const CTA = () => {
                 </p>
                 
                 <a 
-                  href={method.title === "WhatsApp" ? "https://wa.me/5516993739326" : "#"}
-                  target={method.title === "WhatsApp" ? "_blank" : "_self"}
-                  rel={method.title === "WhatsApp" ? "noopener noreferrer" : ""}
+                  href={
+                    method.title === "WhatsApp" 
+                      ? "https://wa.me/5516993739326" 
+                      : method.title === "Agendar Visita"
+                      ? "https://wa.me/5516993739326?text=Olá! Gostaria de agendar uma visita técnica para conhecer as soluções de automação residencial. Podem me ajudar?"
+                      : method.title === "Ligue Agora"
+                      ? "tel:+5516993739326"
+                      : method.title === "E-mail"
+                      ? "mailto:contato@homeconectado.com.br"
+                      : "#"
+                  }
+                  target={method.title === "WhatsApp" || method.title === "Agendar Visita" ? "_blank" : "_self"}
+                  rel={method.title === "WhatsApp" || method.title === "Agendar Visita" ? "noopener noreferrer" : ""}
                   className={`w-full py-3 bg-gradient-to-r ${method.color} text-white rounded-xl font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 block text-center`}
                 >
                   {method.action}

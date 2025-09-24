@@ -87,12 +87,24 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 1 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            <button className="btn-primary text-lg px-10 py-4 shadow-2xl hover:shadow-white/20" aria-label="Solicitar orçamento gratuito para automação residencial">
+            <a 
+              href="https://wa.me/5516993739326?text=Olá! Gostaria de solicitar um orçamento para automação residencial. Podem me ajudar?"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary text-lg px-10 py-4 shadow-2xl hover:shadow-white/20 inline-block text-center" 
+              aria-label="Solicitar orçamento gratuito para automação residencial"
+            >
               Solicitar Orçamento
-            </button>
-            <button className="btn-secondary text-lg px-10 py-4" aria-label="Conhecer nossas soluções de automação residencial">
-              Conhecer Soluções
-            </button>
+            </a>
+            <a 
+              href="https://wa.me/5516993739326?text=Olá! Gostaria de falar com um especialista sobre automação residencial. Podem me ajudar?"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-secondary text-lg px-10 py-4 inline-block text-center" 
+              aria-label="Falar com especialista em automação residencial"
+            >
+              Falar com Especialista
+            </a>
           </motion.div>
         </motion.div>
 

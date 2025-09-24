@@ -15,30 +15,30 @@ const Footer = () => {
       { name: "Contato", href: "#contact" }
     ],
     services: [
-      { name: "Iluminação Inteligente", href: "#" },
-      { name: "Sistema de Segurança", href: "#" },
-      { name: "Assistentes Virtuais", href: "#" },
-      { name: "Economia de Energia", href: "#" }
+      { name: "Iluminação Inteligente", href: "#services" },
+      { name: "Sistema de Segurança", href: "#services" },
+      { name: "Assistentes Virtuais", href: "#services" },
+      { name: "Economia de Energia", href: "#services" }
     ],
     support: [
-      { name: "Central de Ajuda", href: "#" },
-      { name: "Suporte Técnico", href: "#" },
-      { name: "Garantia", href: "#" },
-      { name: "FAQ", href: "#" }
+      { name: "Central de Ajuda", href: "#help" },
+      { name: "Suporte Técnico", href: "#support" },
+      { name: "Garantia", href: "#warranty" },
+      { name: "FAQ", href: "#faq" }
     ]
   }
 
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Youtube, href: "#", label: "YouTube" }
+    { icon: Facebook, href: "https://www.facebook.com/homeconectado", label: "Facebook" },
+    { icon: Instagram, href: "https://www.instagram.com/homeconectado", label: "Instagram" },
+    { icon: Linkedin, href: "https://www.linkedin.com/company/homeconectado", label: "LinkedIn" },
+    { icon: Youtube, href: "https://www.youtube.com/@homeconectado", label: "YouTube" }
   ]
 
   const contactInfo = [
     { icon: Phone, text: "(16) 9 9373-9326", href: "tel:+5516993739326" },
     { icon: Mail, text: "contato@homeconectado.com.br", href: "mailto:contato@homeconectado.com.br" },
-    { icon: MapPin, text: "Franca, SP - Brasil", href: "#" }
+    { icon: MapPin, text: "Franca, SP - Brasil", href: "https://maps.google.com/?q=Franca,SP,Brasil" }
   ]
 
   return (
@@ -82,6 +82,8 @@ const Footer = () => {
                   <motion.a
                     key={index}
                     href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                     className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:gradient-bg transition-all duration-300"
@@ -107,6 +109,8 @@ const Footer = () => {
                     <a
                       href={link.href}
                       className="text-gray-300 hover:text-white transition-colors duration-300"
+                      target={link.href.startsWith('http') ? '_blank' : '_self'}
+                      rel={link.href.startsWith('http') ? 'noopener noreferrer' : ''}
                     >
                       {link.name}
                     </a>
@@ -129,6 +133,8 @@ const Footer = () => {
                     <a
                       href={link.href}
                       className="text-gray-300 hover:text-white transition-colors duration-300"
+                      target={link.href.startsWith('http') ? '_blank' : '_self'}
+                      rel={link.href.startsWith('http') ? 'noopener noreferrer' : ''}
                     >
                       {link.name}
                     </a>
@@ -154,6 +160,8 @@ const Footer = () => {
                     <a
                       href={contact.href}
                       className="text-gray-300 hover:text-white transition-colors duration-300"
+                      target={contact.href.startsWith('http') ? '_blank' : '_self'}
+                      rel={contact.href.startsWith('http') ? 'noopener noreferrer' : ''}
                     >
                       {contact.text}
                     </a>
@@ -202,17 +210,17 @@ const Footer = () => {
         >
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-gray-400 text-sm">
-              © 2024 Home Conectado. Todos os direitos reservados.
+              © 2025 Home Conectado. Todos os direitos reservados.
             </div>
             
             <div className="flex gap-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
+              <a href="#privacy" className="text-gray-400 hover:text-white transition-colors duration-300">
                 Política de Privacidade
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
+              <a href="#terms" className="text-gray-400 hover:text-white transition-colors duration-300">
                 Termos de Uso
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
+              <a href="#cookies" className="text-gray-400 hover:text-white transition-colors duration-300">
                 Cookies
               </a>
             </div>

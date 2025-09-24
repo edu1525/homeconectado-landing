@@ -183,12 +183,22 @@ const Benefits = () => {
                 Junte-se a centenas de famílias que já transformaram suas casas em ambientes inteligentes
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-white text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 hover:scale-105 shadow-lg">
+                <a 
+                  href="https://wa.me/5516993739326?text=Olá! Gostaria de solicitar um orçamento para automação residencial. Podem me ajudar?"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 hover:scale-105 shadow-lg inline-block text-center"
+                >
                   Solicitar Orçamento
-                </button>
-                <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300">
+                </a>
+                <a 
+                  href="https://wa.me/5516993739326?text=Olá! Gostaria de agendar uma visita técnica para conhecer as soluções de automação residencial. Podem me ajudar?"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300 inline-block text-center"
+                >
                   Agendar Visita
-                </button>
+                </a>
               </div>
             </div>
           </div>
