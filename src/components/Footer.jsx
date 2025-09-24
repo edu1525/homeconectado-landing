@@ -21,10 +21,10 @@ const Footer = () => {
       { name: "Economia de Energia", href: "#services" }
     ],
     support: [
-      { name: "Central de Ajuda", href: "#help" },
-      { name: "Suporte Técnico", href: "#support" },
-      { name: "Garantia", href: "#warranty" },
-      { name: "FAQ", href: "#faq" }
+      { name: "Central de Ajuda", href: "/help.html" },
+      { name: "Suporte Técnico", href: "/support.html" },
+      { name: "Garantia", href: "/warranty.html" },
+      { name: "FAQ", href: "/faq.html" }
     ]
   }
 
@@ -52,7 +52,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 relative z-10">
         {/* Main Footer Content */}
         <div className="py-16">
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 mb-12">
             {/* Company Info */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -143,6 +143,30 @@ const Footer = () => {
               </ul>
             </motion.div>
 
+            {/* Support Links */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.25 }}
+              viewport={{ once: true }}
+            >
+              <h4 className="text-lg font-semibold mb-6 font-poppins">Suporte</h4>
+              <ul className="space-y-3">
+                {footerLinks.support.map((link, index) => (
+                  <li key={index}>
+                    <a
+                      href={link.href}
+                      className="text-gray-300 hover:text-white transition-colors duration-300"
+                      target={link.href.startsWith('http') ? '_blank' : '_self'}
+                      rel={link.href.startsWith('http') ? 'noopener noreferrer' : ''}
+                    >
+                      {link.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+
             {/* Contact Info */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -214,14 +238,14 @@ const Footer = () => {
             </div>
             
             <div className="flex gap-6 text-sm">
-              <a href="#privacy" className="text-gray-400 hover:text-white transition-colors duration-300">
+              <a href="/privacy.html" className="text-gray-400 hover:text-white transition-colors duration-300">
                 Política de Privacidade
               </a>
-              <a href="#terms" className="text-gray-400 hover:text-white transition-colors duration-300">
+              <a href="/terms.html" className="text-gray-400 hover:text-white transition-colors duration-300">
                 Termos de Uso
               </a>
-              <a href="#cookies" className="text-gray-400 hover:text-white transition-colors duration-300">
-                Cookies
+              <a href="/cookies.html" className="text-gray-400 hover:text-white transition-colors duration-300">
+                Política de Cookies
               </a>
             </div>
           </div>

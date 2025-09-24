@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Central de Ajuda | Home Conectado</title>
+    <meta name="description" content="Central de ajuda da Home Conectado. Encontre suporte técnico, guias, tutoriais e soluções para seu sistema de automação residencial." />
+    <meta name="keywords" content="central de ajuda, suporte técnico, automação residencial, tutoriais, guias, home conectado" />
+    <meta name="author" content="Home Conectado" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://homeconectado.com.br/help.html" />
+    <meta property="og:title" content="Central de Ajuda | Home Conectado" />
+    <meta property="og:description" content="Central de ajuda da Home Conectado. Encontre suporte técnico, guias, tutoriais e soluções para seu sistema de automação residencial." />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'inter': ['Inter', 'sans-serif'],
+              'poppins': ['Poppins', 'sans-serif'],
+            },
+            colors: {
+              'brand-blue': '#2563EB',
+              'brand-green': '#059669',
+              'brand-orange': '#EA580C',
+              'brand-cyan': '#06B6D4',
+              'brand-teal': '#0D9488',
+            },
+          }
+        }
+      }
+    </script>
+    
+    <style>
+      .gradient-text {
+        background: linear-gradient(to right, #2563EB, #06B6D4, #059669, #EA580C);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .gradient-bg {
+        background: linear-gradient(135deg, #2563EB, #06B6D4, #059669, #EA580C);
+      }
+    </style>
+  </head>
+  <body class="bg-white font-inter">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <a href="/" class="flex items-center gap-3">
+            <div class="w-10 h-10 gradient-bg rounded-xl flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+              </svg>
+            </div>
+            <span class="text-xl font-bold text-gray-900 font-poppins">Home Conectado</span>
+          </a>
+          <a href="/" class="text-brand-blue hover:text-brand-green transition-colors duration-300">
+            ← Voltar ao Início
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-20">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <div class="flex items-center justify-center gap-3 mb-6">
+            <svg class="w-12 h-12 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 font-poppins">
+              Central de
+              <span class="gradient-text"> Ajuda</span>
+            </h1>
+          </div>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Encontre respostas rápidas e suporte especializado para seu sistema de automação
+          </p>
+        </div>
+
+        <!-- Help Categories -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+            <div class="w-16 h-16 gradient-bg rounded-2xl flex items-center justify-center mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4 font-poppins">
+              Guias e Tutoriais
+            </h3>
+            <p class="text-gray-600 mb-6">
+              Aprenda a usar seu sistema de automação
+            </p>
+            <ul class="space-y-2">
+              <li class="flex items-center text-gray-500">
+                <svg class="w-4 h-4 text-brand-green mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Como configurar o aplicativo
+              </li>
+              <li class="flex items-center text-gray-500">
+                <svg class="w-4 h-4 text-brand-green mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Primeiros passos com automação
+              </li>
+              <li class="flex items-center text-gray-500">
+                <svg class="w-4 h-4 text-brand-green mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Configuração de cenas
+              </li>
+              <li class="flex items-center text-gray-500">
+                <svg class="w-4 h-4 text-brand-green mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Integração com assistentes de voz
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+            <div class="w-16 h-16 gradient-bg rounded-2xl flex items-center justify-center mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4 font-poppins">
+              Suporte Técnico
+            </h3>
+            <p class="text-gray-600 mb-6">
+              Assistência especializada 24/7
+            </p>
+            <ul class="space-y-2">
+              <li class="flex items-center text-gray-500">
+                <svg class="w-4 h-4 text-brand-green mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Suporte por telefone
+              </li>
+              <li class="flex items-center text-gray-500">
+                <svg class="w-4 h-4 text-brand-green mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Chat online em tempo real
+              </li>
+              <li class="flex items-center text-gray-500">
+                <svg class="w-4 h-4 text-brand-green mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Visita técnica no local
+              </li>
+              <li class="flex items-center text-gray-500">
+                <svg class="w-4 h-4 text-brand-green mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Diagnóstico remoto
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+            <div class="w-16 h-16 gradient-bg rounded-2xl flex items-center justify-center mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4 font-poppins">
+              Comunidade
+            </h3>
+            <p class="text-gray-600 mb-6">
+              Conecte-se com outros usuários
+            </p>
+            <ul class="space-y-2">
+              <li class="flex items-center text-gray-500">
+                <svg class="w-4 h-4 text-brand-green mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Fórum da comunidade
+              </li>
+              <li class="flex items-center text-gray-500">
+                <svg class="w-4 h-4 text-brand-green mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Dicas e truques
+              </li>
+              <li class="flex items-center text-gray-500">
+                <svg class="w-4 h-4 text-brand-green mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Compartilhamento de experiências
+              </li>
+              <li class="flex items-center text-gray-500">
+                <svg class="w-4 h-4 text-brand-green mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Grupo no WhatsApp
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Support Methods -->
+        <div class="mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 text-center mb-12 font-poppins">
+            Canais de Suporte
+          </h2>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+              <div class="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-2 font-poppins">
+                Telefone
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Atendimento direto com especialistas
+              </p>
+              <div class="flex items-center gap-2 mb-4">
+                <svg class="w-4 h-4 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="text-sm text-gray-500">24/7</span>
+              </div>
+              <a
+                href="tel:+5516993739326"
+                class="w-full py-3 gradient-bg text-white rounded-xl font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 block text-center"
+              >
+                (16) 9 9373-9326
+              </a>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+              <div class="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-2 font-poppins">
+                WhatsApp
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Suporte rápido e prático
+              </p>
+              <div class="flex items-center gap-2 mb-4">
+                <svg class="w-4 h-4 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="text-sm text-gray-500">24/7</span>
+              </div>
+              <a
+                href="https://wa.me/5516993739326?text=Olá! Preciso de suporte técnico. Podem me ajudar?"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-full py-3 gradient-bg text-white rounded-xl font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 block text-center"
+              >
+                Iniciar Conversa
+              </a>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+              <div class="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-2 font-poppins">
+                E-mail
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Suporte detalhado por escrito
+              </p>
+              <div class="flex items-center gap-2 mb-4">
+                <svg class="w-4 h-4 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="text-sm text-gray-500">Resposta em até 2h</span>
+              </div>
+              <a
+                href="mailto:contato@homeconectado.com.br"
+                class="w-full py-3 gradient-bg text-white rounded-xl font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 block text-center"
+              >
+                contato@homeconectado.com.br
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Issues -->
+        <div class="bg-gray-50 rounded-3xl p-8 md:p-12">
+          <h2 class="text-3xl font-bold text-gray-900 text-center mb-12 font-poppins">
+            Problemas Comuns
+          </h2>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-2xl p-6 shadow-lg">
+              <div class="flex items-center gap-3 mb-4">
+                <svg class="w-6 h-6 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+                </svg>
+                <span class="bg-brand-orange/10 text-brand-orange px-3 py-1 rounded-full text-sm font-semibold">
+                  Conectividade
+                </span>
+              </div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-3 font-poppins">
+                Dispositivo não conecta ao Wi-Fi
+              </h3>
+              <p class="text-gray-600 leading-relaxed">
+                Verifique se o Wi-Fi está funcionando, reinicie o dispositivo e tente reconectar. Se o problema persistir, entre em contato conosco.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 shadow-lg">
+              <div class="flex items-center gap-3 mb-4">
+                <svg class="w-6 h-6 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+                </svg>
+                <span class="bg-brand-orange/10 text-brand-orange px-3 py-1 rounded-full text-sm font-semibold">
+                  Aplicativo
+                </span>
+              </div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-3 font-poppins">
+                App não responde ou trava
+              </h3>
+              <p class="text-gray-600 leading-relaxed">
+                Feche completamente o aplicativo, reinicie o dispositivo móvel e abra o app novamente. Verifique se há atualizações disponíveis.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 shadow-lg">
+              <div class="flex items-center gap-3 mb-4">
+                <svg class="w-6 h-6 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+                </svg>
+                <span class="bg-brand-orange/10 text-brand-orange px-3 py-1 rounded-full text-sm font-semibold">
+                  Automação
+                </span>
+              </div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-3 font-poppins">
+                Automações não funcionam
+              </h3>
+              <p class="text-gray-600 leading-relaxed">
+                Verifique se os dispositivos estão online e se as condições da automação estão corretas. Teste manualmente cada dispositivo primeiro.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 shadow-lg">
+              <div class="flex items-center gap-3 mb-4">
+                <svg class="w-6 h-6 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+                </svg>
+                <span class="bg-brand-orange/10 text-brand-orange px-3 py-1 rounded-full text-sm font-semibold">
+                  Assistente de Voz
+                </span>
+              </div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-3 font-poppins">
+                Assistente de voz não reconhece
+              </h3>
+              <p class="text-gray-600 leading-relaxed">
+                Verifique a conexão com a internet, reinicie o assistente e teste os comandos. Certifique-se de que os dispositivos estão configurados corretamente.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-6">
+        <div class="text-center">
+          <div class="flex items-center justify-center gap-3 mb-6">
+            <div class="w-10 h-10 gradient-bg rounded-xl flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+              </svg>
+            </div>
+            <span class="text-xl font-bold font-poppins">Home Conectado</span>
+          </div>
+          <p class="text-gray-400 mb-6">
+            Transformando casas em ambientes inteligentes
+          </p>
+          <div class="flex flex-col sm:flex-row gap-6 justify-center mb-8">
+            <a href="tel:+5516993739326" class="text-gray-300 hover:text-white transition-colors duration-300">
+              (16) 9 9373-9326
+            </a>
+            <a href="mailto:contato@homeconectado.com.br" class="text-gray-300 hover:text-white transition-colors duration-300">
+              contato@homeconectado.com.br
+            </a>
+            <span class="text-gray-300">Franca, SP - Brasil</span>
+          </div>
+          <div class="border-t border-gray-800 pt-6">
+            <p class="text-gray-400 text-sm">
+              © 2025 Home Conectado. Todos os direitos reservados.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

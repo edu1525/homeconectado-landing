@@ -4,12 +4,9 @@ import About from './components/About'
 import Services from './components/Services'
 import Benefits from './components/Benefits'
 import Testimonials from './components/Testimonials'
-import FAQ from './components/FAQ'
-import HelpCenter from './components/HelpCenter'
-import Warranty from './components/Warranty'
-import TechnicalSupport from './components/TechnicalSupport'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
+import CookieConsent from './components/CookieConsent'
 
 function App() {
   return (
@@ -19,12 +16,9 @@ function App() {
       <Services />
       <Benefits />
       <Testimonials />
-      <FAQ />
-      <HelpCenter />
-      <Warranty />
-      <TechnicalSupport />
       <CTA />
       <Footer />
+      <CookieConsent />
     </div>
   )
 }

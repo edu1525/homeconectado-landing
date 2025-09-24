@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>FAQ - Perguntas Frequentes | Home Conectado</title>
+    <meta name="description" content="Tire suas dúvidas sobre automação residencial. Perguntas frequentes sobre instalação, funcionamento e suporte da Home Conectado." />
+    <meta name="keywords" content="FAQ, perguntas frequentes, automação residencial, dúvidas, suporte, home conectado" />
+    <meta name="author" content="Home Conectado" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://homeconectado.com.br/faq.html" />
+    <meta property="og:title" content="FAQ - Perguntas Frequentes | Home Conectado" />
+    <meta property="og:description" content="Tire suas dúvidas sobre automação residencial. Perguntas frequentes sobre instalação, funcionamento e suporte." />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'inter': ['Inter', 'sans-serif'],
+              'poppins': ['Poppins', 'sans-serif'],
+            },
+            colors: {
+              'brand-blue': '#2563EB',
+              'brand-green': '#059669',
+              'brand-orange': '#EA580C',
+              'brand-cyan': '#06B6D4',
+              'brand-teal': '#0D9488',
+            },
+          }
+        }
+      }
+    </script>
+    
+    <style>
+      .gradient-text {
+        background: linear-gradient(to right, #2563EB, #06B6D4, #059669, #EA580C);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .gradient-bg {
+        background: linear-gradient(135deg, #2563EB, #06B6D4, #059669, #EA580C);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 font-inter">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <a href="/" class="flex items-center gap-3">
+            <div class="w-10 h-10 gradient-bg rounded-xl flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+              </svg>
+            </div>
+            <span class="text-xl font-bold text-gray-900 font-poppins">Home Conectado</span>
+          </a>
+          <a href="/" class="text-brand-blue hover:text-brand-green transition-colors duration-300">
+            ← Voltar ao Início
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-20">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <div class="flex items-center justify-center gap-3 mb-6">
+            <svg class="w-12 h-12 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 font-poppins">
+              Perguntas
+              <span class="gradient-text"> Frequentes</span>
+            </h1>
+          </div>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Tire suas dúvidas sobre automação residencial e nossos serviços
+          </p>
+        </div>
+
+        <!-- FAQ Content -->
+        <div class="max-w-4xl mx-auto">
+          <div class="space-y-4">
+            <!-- FAQ Item 1 -->
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+              <button onclick="toggleFAQ(0)" class="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-300">
+                <h3 class="text-lg font-semibold text-gray-900 font-poppins">
+                  O que é automação residencial?
+                </h3>
+                <svg id="icon-0" class="w-6 h-6 text-brand-blue transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div id="content-0" class="hidden px-8 pb-6">
+                <p class="text-gray-600 leading-relaxed">
+                  A automação residencial é um sistema que permite controlar diversos dispositivos da sua casa através de um aplicativo, comandos de voz ou automações programadas. Isso inclui iluminação, climatização, segurança, entretenimento e muito mais.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+              <button onclick="toggleFAQ(1)" class="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-300">
+                <h3 class="text-lg font-semibold text-gray-900 font-poppins">
+                  Quanto custa automatizar uma casa?
+                </h3>
+                <svg id="icon-1" class="w-6 h-6 text-brand-blue transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div id="content-1" class="hidden px-8 pb-6">
+                <p class="text-gray-600 leading-relaxed">
+                  O investimento varia conforme o tamanho da residência e os sistemas desejados. Oferecemos pacotes personalizados que se adequam ao seu orçamento, desde soluções básicas até automação completa. Entre em contato para um orçamento gratuito.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+              <button onclick="toggleFAQ(2)" class="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-300">
+                <h3 class="text-lg font-semibold text-gray-900 font-poppins">
+                  A instalação demora muito?
+                </h3>
+                <svg id="icon-2" class="w-6 h-6 text-brand-blue transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div id="content-2" class="hidden px-8 pb-6">
+                <p class="text-gray-600 leading-relaxed">
+                  O tempo de instalação depende da complexidade do projeto. Sistemas básicos podem ser instalados em 1-2 dias, enquanto automação completa pode levar de 3-7 dias. Sempre respeitamos o cronograma acordado.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+              <button onclick="toggleFAQ(3)" class="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-300">
+                <h3 class="text-lg font-semibold text-gray-900 font-poppins">
+                  Preciso de internet para funcionar?
+                </h3>
+                <svg id="icon-3" class="w-6 h-6 text-brand-blue transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div id="content-3" class="hidden px-8 pb-6">
+                <p class="text-gray-600 leading-relaxed">
+                  Sim, a maioria dos sistemas de automação requer conexão com a internet para funcionamento completo. No entanto, alguns dispositivos podem funcionar localmente mesmo sem internet, garantindo funcionalidades básicas.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+              <button onclick="toggleFAQ(4)" class="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-300">
+                <h3 class="text-lg font-semibold text-gray-900 font-poppins">
+                  Vocês oferecem garantia?
+                </h3>
+                <svg id="icon-4" class="w-6 h-6 text-brand-blue transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div id="content-4" class="hidden px-8 pb-6">
+                <p class="text-gray-600 leading-relaxed">
+                  Sim! Oferecemos garantia de 2 anos em todos os equipamentos e 1 ano de garantia na instalação. Além disso, fornecemos suporte técnico durante todo o período de garantia.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 6 -->
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+              <button onclick="toggleFAQ(5)" class="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-300">
+                <h3 class="text-lg font-semibold text-gray-900 font-poppins">
+                  Posso controlar de qualquer lugar?
+                </h3>
+                <svg id="icon-5" class="w-6 h-6 text-brand-blue transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div id="content-5" class="hidden px-8 pb-6">
+                <p class="text-gray-600 leading-relaxed">
+                  Sim! Com o aplicativo móvel, você pode controlar sua casa de qualquer lugar do mundo, desde que tenha conexão com a internet. Receba notificações e monitore sua residência em tempo real.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 7 -->
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+              <button onclick="toggleFAQ(6)" class="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-300">
+                <h3 class="text-lg font-semibold text-gray-900 font-poppins">
+                  É compatível com assistentes de voz?
+                </h3>
+                <svg id="icon-6" class="w-6 h-6 text-brand-blue transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div id="content-6" class="hidden px-8 pb-6">
+                <p class="text-gray-600 leading-relaxed">
+                  Sim! Nossos sistemas são compatíveis com Google Assistant, Amazon Alexa e Apple Siri. Você pode controlar sua casa usando comandos de voz em português.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 8 -->
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+              <button onclick="toggleFAQ(7)" class="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-300">
+                <h3 class="text-lg font-semibold text-gray-900 font-poppins">
+                  Posso expandir o sistema depois?
+                </h3>
+                <svg id="icon-7" class="w-6 h-6 text-brand-blue transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div id="content-7" class="hidden px-8 pb-6">
+                <p class="text-gray-600 leading-relaxed">
+                  Claro! Nossos sistemas são modulares e escaláveis. Você pode começar com um sistema básico e ir adicionando novos dispositivos conforme sua necessidade e orçamento.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="text-center mt-16">
+          <div class="gradient-bg rounded-3xl p-8 md:p-12 text-white">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 font-poppins">
+              Ainda tem dúvidas?
+            </h2>
+            <p class="text-xl mb-8 opacity-90">
+              Nossa equipe está pronta para esclarecer todas as suas questões
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a 
+                href="https://wa.me/5516993739326?text=Olá! Tenho algumas dúvidas sobre automação residencial. Podem me ajudar?"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="bg-white text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300 inline-block text-center"
+              >
+                Falar com Especialista
+              </a>
+              <a 
+                href="tel:+5516993739326"
+                class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition-colors duration-300 inline-block text-center"
+              >
+                Ligar Agora
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-6">
+        <div class="text-center">
+          <div class="flex items-center justify-center gap-3 mb-6">
+            <div class="w-10 h-10 gradient-bg rounded-xl flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+              </svg>
+            </div>
+            <span class="text-xl font-bold font-poppins">Home Conectado</span>
+          </div>
+          <p class="text-gray-400 mb-6">
+            Transformando casas em ambientes inteligentes
+          </p>
+          <div class="flex flex-col sm:flex-row gap-6 justify-center mb-8">
+            <a href="tel:+5516993739326" class="text-gray-300 hover:text-white transition-colors duration-300">
+              (16) 9 9373-9326
+            </a>
+            <a href="mailto:contato@homeconectado.com.br" class="text-gray-300 hover:text-white transition-colors duration-300">
+              contato@homeconectado.com.br
+            </a>
+            <span class="text-gray-300">Franca, SP - Brasil</span>
+          </div>
+          <div class="border-t border-gray-800 pt-6">
+            <p class="text-gray-400 text-sm">
+              © 2025 Home Conectado. Todos os direitos reservados.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggleFAQ(index) {
+        const content = document.getElementById(`content-${index}`);
+        const icon = document.getElementById(`icon-${index}`);
+        
+        if (content.classList.contains('hidden')) {
+          content.classList.remove('hidden');
+          icon.style.transform = 'rotate(180deg)';
+        } else {
+          content.classList.add('hidden');
+          icon.style.transform = 'rotate(0deg)';
+        }
+      }
+    </script>
+  </body>
+</html>
