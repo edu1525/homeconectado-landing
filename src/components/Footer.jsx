@@ -36,9 +36,9 @@ const Footer = () => {
   ]
 
   const contactInfo = [
-    { icon: Phone, text: "(11) 99999-9999", href: "tel:+5511999999999" },
-    { icon: Mail, text: "contato@homeconectado.com", href: "mailto:contato@homeconectado.com" },
-    { icon: MapPin, text: "São Paulo, SP - Brasil", href: "#" }
+    { icon: Phone, text: "(16) 9 9373-9326", href: "tel:+5516993739326" },
+    { icon: Mail, text: "contato@homeconectado.com.br", href: "mailto:contato@homeconectado.com.br" },
+    { icon: MapPin, text: "Franca, SP - Brasil", href: "#" }
   ]
 
   return (

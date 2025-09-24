@@ -7,7 +7,7 @@ const Testimonials = () => {
     {
       name: "Maria Silva",
       role: "Arquiteta",
-      location: "São Paulo, SP",
+      location: "Franca, SP",
       rating: 5,
       text: "A Home Conectado transformou completamente minha casa. A automação da iluminação e o sistema de segurança me dão uma tranquilidade incrível. Recomendo para todos que buscam praticidade e tecnologia.",
       avatar: "MS"
@@ -15,7 +15,7 @@ const Testimonials = () => {
     {
       name: "João Santos",
       role: "Empresário",
-      location: "Rio de Janeiro, RJ",
+      location: "Franca, SP",
       rating: 5,
       text: "Incrível como a IA aprendeu meus hábitos e agora minha casa se adapta automaticamente. A economia na conta de energia foi surpreendente. Vale cada centavo investido!",
       avatar: "JS"
@@ -23,7 +23,7 @@ const Testimonials = () => {
     {
       name: "Ana Costa",
       role: "Médica",
-      location: "Belo Horizonte, MG",
+      location: "Franca, SP",
       rating: 5,
       text: "Como médica, passo muito tempo fora de casa. O sistema de monitoramento e os alertas inteligentes me deixam muito mais segura. A equipe de suporte é excepcional!",
       avatar: "AC"
@@ -31,7 +31,7 @@ const Testimonials = () => {
     {
       name: "Carlos Oliveira",
       role: "Engenheiro",
-      location: "Brasília, DF",
+      location: "Franca, SP",
       rating: 5,
       text: "A integração entre todos os dispositivos é perfeita. Posso controlar tudo pelo app ou por comando de voz. A qualidade dos produtos e instalação é de primeiro mundo.",
       avatar: "CO"
@@ -39,7 +39,7 @@ const Testimonials = () => {
     {
       name: "Fernanda Lima",
       role: "Designer",
-      location: "Porto Alegre, RS",
+      location: "Franca, SP",
       rating: 5,
       text: "A personalização das cenas de iluminação é fantástica. Cada ambiente tem sua própria atmosfera. Meus clientes ficam impressionados quando visitam minha casa!",
       avatar: "FL"
@@ -47,7 +47,7 @@ const Testimonials = () => {
     {
       name: "Roberto Alves",
       role: "Advogado",
-      location: "Salvador, BA",
+      location: "Franca, SP",
       rating: 5,
       text: "A segurança foi o que mais me impressionou. As câmeras com reconhecimento facial e os alertas em tempo real são incríveis. Minha família se sente muito mais protegida.",
       avatar: "RA"

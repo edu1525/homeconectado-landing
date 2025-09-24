@@ -8,7 +8,7 @@ const CTA = () => {
       icon: Phone,
       title: "Ligue Agora",
       description: "Fale diretamente com nossos especialistas",
-      action: "(11) 99999-9999",
+      action: "(16) 9 9373-9326",
       color: "from-green-500 to-emerald-600"
     },
     {
@@ -22,7 +22,7 @@ const CTA = () => {
       icon: Mail,
       title: "E-mail",
       description: "Envie suas dúvidas por escrito",
-      action: "contato@homeconectado.com",
+      action: "contato@homeconectado.com.br",
       color: "from-blue-500 to-blue-700"
     },
     {
@@ -120,9 +120,14 @@ const CTA = () => {
                   {method.description}
                 </p>
                 
-                <button className={`w-full py-3 bg-gradient-to-r ${method.color} text-white rounded-xl font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105`}>
+                <a 
+                  href={method.title === "WhatsApp" ? "https://wa.me/5516993739326" : "#"}
+                  target={method.title === "WhatsApp" ? "_blank" : "_self"}
+                  rel={method.title === "WhatsApp" ? "noopener noreferrer" : ""}
+                  className={`w-full py-3 bg-gradient-to-r ${method.color} text-white rounded-xl font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105 block text-center`}
+                >
                   {method.action}
-                </button>
+                </a>
               </div>
             </motion.div>
           ))}
