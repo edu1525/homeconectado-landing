@@ -1,8 +1,18 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Home, Wifi, Lightbulb, Sparkles } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
+import { Home, Wifi, Lightbulb, Sparkles, User, Settings } from 'lucide-react'
 
 const Hero = () => {
+  const navigate = useNavigate()
+
+  const handleAccessPlatform = () => {
+    navigate('/platform')
+  }
+
+  const handleAccessAdmin = () => {
+    navigate('/admin')
+  }
   return (
     <section className="relative min-h-screen gradient-bg flex items-center justify-center overflow-hidden" role="banner" aria-label="Seção principal da Home Conectado">
       {/* Background Effects */}
@@ -80,7 +90,7 @@ const Hero = () => {
             ))}
           </motion.div>
 
-          {/* CTA Button */}
+          {/* CTA Buttons */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -105,6 +115,32 @@ const Hero = () => {
             >
               Falar com Especialista
             </a>
+          </motion.div>
+
+          {/* Access Buttons */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1.2 }}
+            className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center"
+          >
+            <button
+              onClick={handleAccessPlatform}
+              className="flex items-center gap-3 bg-white/10 backdrop-blur-sm border border-white/30 text-white px-6 py-3 rounded-full font-semibold hover:bg-white/20 transition-all duration-300 hover:scale-105"
+              aria-label="Acessar plataforma do cliente"
+            >
+              <User className="w-5 h-5" />
+              <span>Acessar Plataforma do Cliente</span>
+            </button>
+            
+            <button
+              onClick={handleAccessAdmin}
+              className="flex items-center gap-3 bg-red-500/20 backdrop-blur-sm border border-red-500/30 text-white px-6 py-3 rounded-full font-semibold hover:bg-red-500/30 transition-all duration-300 hover:scale-105"
+              aria-label="Acessar painel administrativo"
+            >
+              <Settings className="w-5 h-5" />
+              <span>Painel Administrativo</span>
+            </button>
           </motion.div>
         </motion.div>
 
